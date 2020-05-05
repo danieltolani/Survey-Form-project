@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title> Tolani's Survey Project </title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title"> Sahad Stores Ltd. Survey Form  </h1> 
+            <p id="description"> We are happy you helped us get to this point. Cheers to an amazing staff! </p>
+        </header>
+
+        <form id="survey-form">
+
+            <div class="form-group">
+                <label id="name-label" for="name"> Name </label>
+                <input id="name" name="name" type="text" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email" id="email-label"> Email </label>
+                <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="number" id="number-label"> Reg Digits <span class="clue">(optional)</span> </label>
+                <input type="number" id="number" name="Reg Digits" min="00001" max="60000" placeholder="Five Digits Reg">
+            </div>
+
+            <div class="form-group">
+                <p id="selection-description"> Kindly select your rank </p>
+                <select name="ranking" id="dropdown" class="form-control" required>
+                    <option value="Junior Staff"> Junior Staff </option>
+                    <option value="Senior Staff"> Senior Staff </option>
+                    <option value="HOD"> Head Of Department </option>
+                    <option value="RO"> Residing Officer </option>
+                    <option value="Supreme"> Suprintendent </option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p id="complains"> Do you face any difficulty working with us? </p>
+                <div id="diff">
+                <label id="difficulty"> <input type="radio" name="staffs-difficulty" value="yes" class="input-radio" > Yes </label>
+                <label id="difficulty"> <input type="radio" name="staffs-difficulty" value="No" class="input-radio" > No </label>
+                <label id="difficulty"> <input type="radio" name="staffs-difficulty" value="Not sure" class="input-radio" > Not sure </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <p id="staff-joy"> What is your thought about our operation? </p>
+                <select name="thoughts" id="staff-thought" class="form-control">
+                    <option value="best"> Everything is perfectly in shape! </option>
+                    <option value="better"> Fine, but we need to hold a meeting? </option>
+                    <option value="good"> You're not happy with your bosses? </option>
+                    <option value="worse"> You're scared of being sacked </option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                
+                <p id="promotion">Do you seek promotion? where would you like us to place you? <span class="clue">(you can check multiple)</span></p>
+                <div id="promote">
+                <label id="elevate">
+                    <input type="checkbox" name="prefer" value="Senior Staff" class="input-checkbox"> Senior Staff </input>
+                </label>
+
+                <label id="elevate">
+                    <input type="checkbox" name="prefer" value="HOD" class="input-checkbox"> Head Of Department </input>
+                </label>
+
+                <label id="elevate">
+                    <input type="checkbox" name="prefer" value="RO" class="input-checkbox"> Residing Officer </input>
+                </label>
+
+                <label id="elevate">
+                    <input type="checkbox" name="prefer" value="Supreme" class="input-checkbox"> Suprintendent </input>
+                </label>
+
+                <label id="elevate">
+                    <input type="checkbox" name="prefer" value="other" class="input-checkbox"> Other </input>
+                </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <p id="comment-description"> Any comments or suggestions? </p>
+                <textarea name="" id="comment" class="input-textarea" placeholder="Enter comments here" name="comment"></textarea>
+            </div>
+
+            <div class="form-group">
+                <button id="submit"> Submit </button>
+            </div>
+        </form>
+
+    </div>
+    
+</body>
+</html>
